@@ -11,6 +11,7 @@ class Student {
         this.lastName = lastName;
     }
 
+<<<<<<< HEAD
     public float getMoyenne() {
         return Moyenne;
     }
@@ -20,6 +21,9 @@ class Student {
     }
 // Getters et Setters
 
+=======
+    // Getters et Setters
+>>>>>>> Classes
     public String getStudentId() {
         return studentId;
     }
