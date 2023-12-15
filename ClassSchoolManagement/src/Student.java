@@ -10,8 +10,9 @@ class Student {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    
-  public float getMoyenne() {
+
+
+    public float getMoyenne() {
         return Moyenne;
     }
 
