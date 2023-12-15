@@ -26,7 +26,7 @@ public class SchoolClass {
     // MÃ©thode pour ajouter un Ã©tudiant Ã  la classe
     public void ajouterEtudiant(Student student) {
         Students.add(student);
-        System.out.println("--------------Ajout effectuï¿½-----------------");
+        System.out.println("--------------*** Ajoutée avec succés ***-------µµ--------");
 
     }
     public void supprimerEtudiant(Student student) {
