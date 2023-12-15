@@ -26,22 +26,22 @@ public class SchoolClass {
     // MÃ©thode pour ajouter un Ã©tudiant Ã  la classe
     public void ajouterEtudiant(Student student) {
         Students.add(student);
-        System.out.println("--------------Ajout affectué avec succés ----------------");
+        System.out.println("--------------Ajout affectuï¿½ avec succï¿½s ------------------------");
 
     }
     public void supprimerEtudiant(Student student) {
         Students.remove(student);
     }
 
-    // Méthode pour modifier le nom de la classe
+    // Mï¿½thode pour modifier le nom de la classe
     public void modifierNomClasse(String nouveauNom) {
         this.nom = nouveauNom;
     }
 
-    // Méthode pour afficher les détails de la classe avec ses étudiants
+    // Mï¿½thode pour afficher les dï¿½tails de la classe avec ses ï¿½tudiants
     public void afficherDetails() {
         System.out.println("Classe: " + nom);
-        System.out.println("Étudiants:");
+        System.out.println("ï¿½tudiants:");
         for (Student student : Students) {
             student.displayStudentInfo();
             System.out.println("--------------");

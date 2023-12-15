@@ -11,7 +11,6 @@ class Student {
     }
 
     // Getters et Setters
-
     public String getStudentId() {
         return studentId;
     }
