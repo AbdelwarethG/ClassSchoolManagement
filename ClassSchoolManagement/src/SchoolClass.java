@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
 public class SchoolClass {
-    private String nom;
-    private ArrayList<Student> students;
+      private String nom;
+     private ArrayList<Student> Students;
 
     public SchoolClass(String nom) {
         this.nom = nom;
-        this.students = new ArrayList<>();
+        this.Students = new ArrayList<>();
     }
 
     // Getters et Setters
@@ -20,12 +20,12 @@ public class SchoolClass {
     }
 
     public ArrayList<Student> getStudents() {
-        return students;
+        return Students;
     }
 
     // Méthode pour ajouter un étudiant à la classe
     public void ajouterEtudiant(Student student) {
-        students.add(student);
+        Students.add(student);
 
     }
 
