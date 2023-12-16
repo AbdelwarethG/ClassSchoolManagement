@@ -1,34 +1,41 @@
 public class Main {
     public static void main(String[] args) {
 
-        SchoolClass classe1 = new SchoolClass("Classe A");
+        // Create a school class
+        SchoolClass schoolClass = new SchoolClass("Class A");
 
+        // Create students
+        Student student1 = new Student("S001", "John", "Doe", 18);
+        Student student2 = new Student("S002", "Jane", "Smith", 17);
 
-        Student etudiant1 = new Student("S001", "John", "Doe", 20);
-        Student etudiant2 = new Student("S002", "Alice", "Smith", 22);
+        // Add students to the class
+        schoolClass.ajouterEtudiant(student1);
+        schoolClass.ajouterEtudiant(student2);
 
+        // Display class details
+        schoolClass.afficherDetails();
 
-        classe1.ajouterEtudiant(etudiant1);
-        classe1.ajouterEtudiant(etudiant2);
+        // Modify class name
+        schoolClass.modifierNomClasse("Class B");
 
+        // Display updated class details
+        schoolClass.afficherDetails();
 
-        System.out.println("Détails initiaux de la classe:");
-        classe1.afficherDetails();
+        // Remove a student
+        schoolClass.supprimerEtudiant(student1);
 
+        // Display updated class details
+        schoolClass.afficherDetails();
 
-        classe1.modifierNomClasse("Classe B");
+        // Set student grades
+        student1.setMoyenne(15.5f);
+        student2.setMoyenne(18.0f);
 
+        // Display individual student details and grades
+        student1.displayStudentInfo();
+        System.out.println("Grade: " + student1.calculateGrade());
 
-        Student etudiant3 = new Student("S003", "Bob", "Johnson", 21);
-
-
-        classe1.ajouterEtudiant(etudiant3);
-
-
-        classe1.supprimerEtudiant(etudiant1);
-
-
-        System.out.println("\nDétails mis à jour de la classe:");
-        classe1.afficherDetails();
+        student2.displayStudentInfo();
+        System.out.println("Grade: " + student2.calculateGrade());
     }
 }
